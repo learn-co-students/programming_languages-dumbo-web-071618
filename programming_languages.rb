@@ -6,7 +6,7 @@ languages_by_style.each do |language_keys,languages_hash|
     type_hash.each do |type_key,type|
       new_hash[name] ={}
     new_hash[name][:style] ||= []
-    new_hash[name][:style].push(language_keys)
+    new_hash[name][:style] << language_keys
         new_hash[name][type_key]= type
 
     end
